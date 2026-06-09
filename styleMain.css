@@ -227,6 +227,10 @@ body {
     box-sizing: border-box; /* Ensures padding doesn't push the button out of the box */
 }
 
+li a {
+    text-decoration: none;
+}
+
 .menu-button-XR {
     text-shadow: 0 0 10px #ffffff; /* Adds a cool neon glow effect */
     transform: scale(1.05); /* Slightly sizes up the button */
