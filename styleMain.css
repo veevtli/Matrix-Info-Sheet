@@ -225,13 +225,6 @@ body {
     text-align: center;     /* Aligns text to the left; change to 'center' if preferred */
     cursor: pointer;      /* Gives the mouse a pointer hand on hover */
     box-sizing: border-box; /* Ensures padding doesn't push the button out of the box */
-}
-
-li a {
-    text-decoration: none;
-}
-
-.no-underline {
     text-decoration: none;
 }
 
@@ -250,6 +243,7 @@ li a {
     text-align: center;     /* Aligns text to the left; change to 'center' if preferred */
     cursor: pointer;      /* Gives the mouse a pointer hand on hover */
     box-sizing: border-box; /* Ensures padding doesn't push the button out of the box */
+    text-decoration: none;
 }
 
 .red-letter {
@@ -273,6 +267,7 @@ li a {
     text-align: center;     /* Aligns text to the left; change to 'center' if preferred */
     cursor: pointer;      /* Gives the mouse a pointer hand on hover */
     box-sizing: border-box; /* Ensures padding doesn't push the button out of the box */
+    text-decoration: none;
 }
 
 .menu-header {
