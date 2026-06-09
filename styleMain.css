@@ -231,6 +231,10 @@ li a {
     text-decoration: none;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .menu-button-XR {
     text-shadow: 0 0 10px #ffffff; /* Adds a cool neon glow effect */
     transform: scale(1.05); /* Slightly sizes up the button */
