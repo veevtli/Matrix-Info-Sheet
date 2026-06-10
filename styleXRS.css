@@ -414,7 +414,7 @@ body {
 }
 
 img {
-    width: 95%;        /* or a fixed width, e.g., 600px */
+    width: 100%;        /* or a fixed width, e.g., 600px */
     height: 400px;      /* set your desired fixed height */
     object-fit: cover;  /* keeps aspect ratio, prevents squishing */
     display: block;
