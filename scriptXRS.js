@@ -40,16 +40,24 @@ const images = [
 ];
 
 let currentIndex = 0;
+let isTransitioning = false; // The safety lock
 
 function changeImage(direction) {
+  // If we are already mid-fade, ignore any incoming clicks
+  if (isTransitioning) return;
+  
   const imgElement = document.getElementById("matrix-image");
+  if (!imgElement) return; // Safety check in case ID is wrong
+
+  // Lock the button
+  isTransitioning = true;
 
   // 1. Start the fade out
   imgElement.classList.add("fade-out");
 
-  // 2. Wait for the fade-out animation to finish (400ms)
+  // 2. Wait 400ms for CSS transition to finish
   setTimeout(() => {
-    // Update the index based on clicking Next or Previous
+    // Update index
     if (direction === 'next') {
       currentIndex++;
       if (currentIndex >= images.length) currentIndex = 0;
@@ -58,10 +66,16 @@ function changeImage(direction) {
       if (currentIndex < 0) currentIndex = images.length - 1;
     }
 
-    // 3. Swap the image source while it's invisible
+    // 3. Swap source while hidden
     imgElement.src = images[currentIndex];
 
-    // 4. Fade it back in
+    // 4. Fade back in
     imgElement.classList.remove("fade-out");
+
+    // 5. Unlock the button after fade-in completes
+    setTimeout(() => {
+      isTransitioning = false;
+    }, 400);
+
   }, 400); 
 }
