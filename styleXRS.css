@@ -387,36 +387,3 @@ body {
 
     text-align: center;
 }
-
-#matrix-image {
-  /* Keeps the transition smooth over 0.4 seconds */
-  transition: opacity 0.4s ease-in-out;
-  opacity: 1;
-}
-
-/* A helper class to handle the fade-out state */
-.fade-out {
-  opacity: 0 !important;
-}
-
-.matrix-slideshow {
-    width: 100%;
-    max-width: 700px;   /* sets a maximum width for your slideshow area */
-    height: 450px;      /* locks the height of the slideshow */
-    overflow: hidden;   /* hides anything that accidentally spills out */
-    margin: 0 auto;
-}
-
-.matrix-slideshow img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* forces the image to perfectly fill the container */
-}
-
-img {
-    width: 100%;        /* or a fixed width, e.g., 600px */
-    height: 400px;      /* set your desired fixed height */
-    object-fit: cover;  /* keeps aspect ratio, prevents squishing */
-    display: block;
-    margin: 0 auto;     /* centers the image if it's smaller than the page */
-}
