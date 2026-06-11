@@ -880,3 +880,64 @@ body {
         letter-spacing: 1px;          /* Keeps it legible when smaller */
     }
 }}
+
+.collapsible {
+	font-size: 30px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    background: none;
+
+    border: none;
+
+    color: #9BE9A8;
+
+    display: block;
+
+    margin: auto;
+}
+
+.collapsible:hover {
+	color: #d6ffd6;
+
+    transform: scale(1.05);
+
+    transition: 0.3s ease;
+
+}
+
+.collapsible {
+	font-size: 30px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    background: none;
+
+    border: none;
+
+    color: #9BE9A8;
+
+    display: block;
+
+    margin: auto;
+}
+
+.engine {
+	text-align: center;
+}
